@@ -1,0 +1,1 @@
+Metalamp. Task #2.
