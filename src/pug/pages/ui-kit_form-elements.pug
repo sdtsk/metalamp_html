@@ -1,0 +1,13 @@
+include ../includes/ui-kit/form-elements/text-fields/text-fields
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Form elements
+    body 
+        +text-field("Text field", "Email")
+        +text-field("Text field", "This is pretty awesome")
+        +text-field("Masked text field", "ДД.ММ.ГГГГ")(class="text-field-masked")

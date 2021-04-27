@@ -1,0 +1,28 @@
+.text-field {
+    &__title {
+        font-family: $boldFont;
+        font-size: 12px;
+        line-height: 14,63px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+    &__input {
+        min-width: 320px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 12.5px 15px;
+        color: rgba(31, 32, 65, 0.25);
+        &::placeholder {
+            font-family: $mainFont;
+            font-size: 13.6px;
+            line-height: 18px;
+        }
+    }
+    &__input:hover, 
+    &__input:focus,
+    &__input:active {
+        color: rgba(31, 32, 65, .75);
+        border: 1px solid rgba(31, 32, 65, 0.5);
+    }
+}
