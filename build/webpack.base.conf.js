@@ -10,7 +10,7 @@ const webpack = require('webpack')
 const PATHS = {
   src: path.join(__dirname, '../src'),
   dist: path.join(__dirname, '../dist'),
-  modules: path.join(__dirname, '../src/pug/includes/modules'),
+  modules: path.join(__dirname, '../src/pug/includes'),
   assets: 'assets/'
 }
 

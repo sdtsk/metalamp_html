@@ -1,0 +1,25 @@
+include ../includes/ui-kit/colors-types/colors-types
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Colors & Types
+    body
+        .colors-and-types-container
+            img(class="toxin-logo", src="assets/img/toxin-logo.svg", alt="")
+            .colors-column
+                +color-card('Dark Shade 100%', '#1F2041')
+                +color-card('Dark Shade 75%', '#1F2041')(class='color-card-75')
+                +color-card('Dark Shade 50%', '#1F2041')(class='color-card-50')
+                +color-card('Dark Shade 25%', '#1F2041')(class='color-card-25')
+                +color-card('Dark Shade 5%', '#1F2041')(class='color-card-5')
+                +color-card('Purple', '#BC9CFF')(class='color-card-purple')
+                +color-card('Green', '#6FCF97')(class='color-card-green')
+            .types-column
+                +type-card('H1', 'This one is the sub-section or widget title')(class='type-card-h1')
+                +type-card('H2', 'Next one is the item title inside widgets')(class='type-card-h2')
+                +type-card('H3', 'This is a label or CTA text')(class='type-card-h3')
+                +type-card('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')(class='type-card-body')

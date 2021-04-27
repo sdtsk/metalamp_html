@@ -1,0 +1,12 @@
+mixin color-card(name, hexcode)
+    .colors-column__color-card.color-card
+        .color-card__sample&attributes(attributes)
+        .color-card__description
+            .color-card__name= name
+            .color-card__hexcode= hexcode
+
+mixin type-card(name, description)
+    .types-column__type-card.type-card&attributes(attributes)
+        .type-card__name-box
+            .type-card__name= name 
+        .type-card__description= description
