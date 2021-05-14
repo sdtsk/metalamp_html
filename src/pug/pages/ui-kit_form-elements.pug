@@ -1,4 +1,5 @@
 include ../includes/ui-kit/form-elements/text-fields/text-fields
+include ../includes/ui-kit/form-elements/calendar/calendar
 
 doctype html
 html(lang="en")
@@ -8,6 +9,24 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Form elements
     body 
-        +text-field("Text field", "Email")
-        +text-field("Text field", "This is pretty awesome")
-        +text-field("Masked text field", "ДД.ММ.ГГГГ")(class="text-field-masked")
+        //- +text-field("Text field", "Email")
+        //- +text-field("Text field", "This is pretty awesome")
+        //- +text-field("Masked text field", "ДД.ММ.ГГГГ", "text-field-masked")
+        //- +text-field-subscription("Subscription text field", "Email")
+        //- <select>
+        //-     <option value="one">input(type="text")select</option>
+        //-     <option value="two">two</option>
+        //-     <option value="three">three</option>
+        //- </select>
+        //- input.datepicker-here(type="text" placeholder="ДД.ММ.ГГГГ" data-range="true" data-multiple-dates-separator=" - ")
+
+        //- <div class="one">
+        //-     <label for="start_one">С:</label>
+        //-     <input type="text" id="start_one" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here"/>
+        //-     <label for="start_one">До:</label>
+        //-     <input type='text' id='end_one'>
+        //- </div>
+        <div id="dom-id">
+            <input class="calendar-input" type="text" id="date-range200" placeholder="ДД.ММ.ГГГ">
+            <input class="calendar-input" type="text" id="date-range201" placeholder="ДД.ММ.ГГГ">
+        </div>

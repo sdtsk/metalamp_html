@@ -11,6 +11,7 @@ const PATHS = {
   src: path.join(__dirname, '../src'),
   dist: path.join(__dirname, '../dist'),
   modules: path.join(__dirname, '../src/pug/includes'),
+  node_modules: path.join(__dirname, '../node_modules'),
   assets: 'assets/'
 }
 
@@ -86,13 +87,19 @@ module.exports = {
   resolve: {
     alias: {
       '~': PATHS.src,
-      '@': PATHS.modules
+      '@': PATHS.modules,
+      '$': path.resolve('node_modules','jquery/src/jquery'),
+      'jquery': path.resolve('node_modules','jquery/src/jquery'),
     }
   },
   plugins: [
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
+      '$': 'jquery',
+      'jQuery': 'jquery',
+      'window.jQuery': 'jquery',
+      'jquery': 'jquery',
+      'window.jquery': 'jquery',
+      'window.$': 'jquery'
     }),
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].[hash].css`,

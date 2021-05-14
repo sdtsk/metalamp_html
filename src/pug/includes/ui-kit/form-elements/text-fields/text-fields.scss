@@ -1,4 +1,7 @@
+// text field style
+
 .text-field {
+    width: 320px;
     &__title {
         font-family: $boldFont;
         font-size: 12px;
@@ -7,11 +10,11 @@
         margin-bottom: 4px;
     }
     &__input {
-        min-width: 320px;
+        width: inherit;
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
         border-radius: 4px;
-        padding: 12.5px 15px;
+        padding: 13px 15px;
         color: rgba(31, 32, 65, 0.25);
         &::placeholder {
             font-family: $mainFont;
@@ -24,5 +27,35 @@
     &__input:active {
         color: rgba(31, 32, 65, .75);
         border: 1px solid rgba(31, 32, 65, 0.5);
+    }
+}
+
+
+// subscription text field style
+
+.text-field {
+    &-subscription {
+        width: 266px;
+    }
+    &__form {
+        width: inherit;
+        position: relative;
+    }
+    &__button {
+        width: 41px;
+        height: 40px;
+        position: absolute;
+        right: 1px;
+        bottom: 2px;
+        border-radius: 4px;
+        background-color: #fff;
+        &::before {
+            content: '\e903';
+            font-size: 24px;
+            background: linear-gradient(180deg, rgba(139,164,249,1) 0%, rgba(188,156,255,1) 100%);
+            background-clip: text;
+            color: transparent;
+            font-family: 'icomoon';
+        }
     }
 }

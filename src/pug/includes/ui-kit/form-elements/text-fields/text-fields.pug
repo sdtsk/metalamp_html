@@ -1,4 +1,11 @@
-mixin text-field(name, placeholder)
+mixin text-field(name, placeholder, mask)
     .text-field
         .text-field__title= name
-        input.text-field__input&attributes(attributes)(type="text" placeholder= placeholder)
+        input.text-field__input(class= mask type="text" placeholder= placeholder)
+
+mixin text-field-subscription(name, placeholder)
+    .text-field.text-field-subscription
+        .text-field__title= name
+        form.text-field__form
+            input.text-field__input(type="text" placeholder= placeholder)
+            button.text-field__button(type="submit")

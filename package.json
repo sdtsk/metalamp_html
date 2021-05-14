@@ -41,7 +41,10 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "inputmask": "^5.0.5",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "jquery-date-range-picker-maklai": "^2.0.6",
+    "jquery-form-styler": "^2.0.2"
   }
 }
